@@ -1,9 +1,17 @@
 var express = require('express');
 var app = express();
 require('dotenv').config();
+var getResult = require('./scrapper');
 
 app.get('/', (req, res)=>{
-    res.send('working .....')
+    getResult().then((result)=>{
+        res.json(result)
+    }).catch((err)=>{
+        return console.log(err);
+    })
+
+   
+    
 })
 
 

@@ -2,7 +2,12 @@
 
 ![sample](https://i.imgur.com/4QmQW0L.png)
 
-#### this is a Live Monitor shows you rael-time number of coronavirus cases globally and in UK , Spain.
+### overview
+ this is a Live Monitor shows you rael-time number of coronavirus cases globally and in UK , Spain.
+
+ this is a full React code with Node server that uses web scrapping with cheerio.
+
+
 
 ## installation 
  1- `git clone https://github.com/aa947/corona_scrapper.git `
@@ -10,7 +15,7 @@
  2- `npm install`
 
  3- `cd client ` then `npm install`
- 
+
  4- `npm run dev` in the root folder
  
  ## more info 

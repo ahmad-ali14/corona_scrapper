@@ -1,4 +1,4 @@
-# coronavirus Live Monitor [![Build Status](https://travis-ci.org/aa947/corona_scrapper.svg?branch=master)](https://travis-ci.org/aa947/corona_scrapper)
+# coronavirus Live Monitor [![Build Status](https://travis-ci.org/aa947/corona_scrapper.svg?branch=master)](https://travis-ci.org/aa947/corona_scrapper)  [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)  
 
 ![sample](https://i.imgur.com/4QmQW0L.png)
 
@@ -27,4 +27,4 @@
  https://www.ahmad-ali.co.uk/
  
  ## licence 
- `MIT`
+ [![License: CC BY 4.0](https://licensebuttons.net/l/by/4.0/80x15.png)](https://creativecommons.org/licenses/by/4.0/)

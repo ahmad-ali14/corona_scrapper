@@ -8,14 +8,30 @@ const cors = require('cors');
 app.use(cors({}));
 
 app.get('/', (req, res)=>{
-    getResult().then((result)=>{
+    getResult("https://www.worldometers.info/coronavirus/").then((result)=>{
         res.json(result)
     }).catch((err)=>{
         return console.log(err);
     })
-
    
-    
+})
+
+app.get('/uk', (req, res)=>{
+    getResult("https://www.worldometers.info/coronavirus/country/uk/").then((result)=>{
+        res.json(result)
+    }).catch((err)=>{
+        return console.log(err);
+    })
+   
+})
+
+app.get('/spain', (req, res)=>{
+    getResult("https://www.worldometers.info/coronavirus/country/spain/").then((result)=>{
+        res.json(result)
+    }).catch((err)=>{
+        return console.log(err);
+    })
+   
 })
 
 

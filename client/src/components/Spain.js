@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from "axios";
 
-export class World extends Component {
+export class Spain extends Component {
 
     constructor(props) {
         super(props)
@@ -14,7 +14,7 @@ export class World extends Component {
     }
 
     componentDidMount() {
-        axios.get("http://localhost:5000")
+        axios.get("http://localhost:5000/spain")
             .then((res) => {
                 console.log(res.data)
                 this.setState({
@@ -33,14 +33,14 @@ export class World extends Component {
 
         const tdMarkUp = loading ? (
             <>
-              <th scope="row">world</th>
+              <th scope="row">Spain</th>
        <td> loading .. </td>
        <td> loading .. </td>
        <td> loading .. </td>
             </>
         ) : (
             <>
-              <th scope="row">world</th>
+              <th scope="row">Spain</th>
       { numbers && <td> { numbers[0] } </td>}
       { numbers && <td> { numbers[1] } </td>}   
       { numbers && <td> { numbers[2] } </td>}
@@ -56,4 +56,4 @@ export class World extends Component {
     }
 }
 
-export default World
+export default Spain

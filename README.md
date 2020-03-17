@@ -6,13 +6,16 @@
 
 ## installation 
  1- `git clone https://github.com/aa947/corona_scrapper.git `
+
  2- `npm install`
+
  3- `cd client ` then `npm install`
+ 
  4- `npm run dev` in the root folder
  
  ## more info 
  1- [full you tube tutorial arabic language شرح بالعربي](https://www.youtube.com/playlist?list=PLrMI74uzoMfmHqfyikZbCWh-HUW3i89Cn)
- 
+
  2- [youTube tutorial english](https://www.youtube.com/playlist?list=PLrMI74uzoMflFfag4AZO1cAFi90WUdTcZ)
  
  ## contact

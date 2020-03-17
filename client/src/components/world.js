@@ -8,23 +8,37 @@ export class World extends Component {
 
         this.state = {
             numbers: [],
-            source: "", 
+            source: "",
             loading: true
         }
     }
 
-    componentDidMount() {
+
+    getData = (refer) => {
         axios.get("http://localhost:5000")
             .then((res) => {
-                console.log(res.data)
-                this.setState({
+                console.log('updated');
+                refer.setState({
                     numbers: res.data.numbers,
                     source: res.data.source,
-                    loading:false
+                    loading: false
                 })
             })
 
             .catch((err) => { return console.log(err) });
+    }
+
+
+
+    componentDidMount() {
+        this.getData(this);
+
+        this.interval = setInterval(() => { this.getData(this) }, 1000*60);
+
+    }
+
+    componentWillUnmount(){
+        clearInterval(this.interval);
     }
 
     render() {
@@ -33,19 +47,19 @@ export class World extends Component {
 
         const tdMarkUp = loading ? (
             <>
-              <th scope="row">world</th>
-       <td> loading .. </td>
-       <td> loading .. </td>
-       <td> loading .. </td>
+                <th scope="row">world</th>
+                <td> loading .. </td>
+                <td> loading .. </td>
+                <td> loading .. </td>
             </>
         ) : (
-            <>
-              <th scope="row">world</th>
-      { numbers && <td> { numbers[0] } </td>}
-      { numbers && <td> { numbers[1] } </td>}   
-      { numbers && <td> { numbers[2] } </td>}
-            </>
-        )
+                <>
+                    <th scope="row">world</th>
+                    {numbers && <td> {numbers[0]} </td>}
+                    {numbers && <td> {numbers[1]} </td>}
+                    {numbers && <td> {numbers[2]} </td>}
+                </>
+            )
         return (
             <>
 

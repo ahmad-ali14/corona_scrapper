@@ -31,6 +31,11 @@ function App() {
     <tr>
       <Spain />
     </tr>
+    <tr>
+  <th scope="row" colSpan="4">
+      Source: Worldometer, Counters are updated every minute. 
+      </th>
+    </tr>
 
     
   </tbody>

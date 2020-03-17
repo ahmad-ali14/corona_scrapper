@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import axios from "axios";
-import getOurData from './getData';
 
 export class UK extends Component {
 
@@ -14,20 +13,32 @@ export class UK extends Component {
         }
     }
 
+  
+    getData = (refer) => {
+        axios.get("http://localhost:5000/uk")
+            .then((res) => {
+                console.log('updated uk');
+                refer.setState({
+                    numbers: res.data.numbers,
+                    source: res.data.source,
+                    loading: false
+                })
+            })
+
+            .catch((err) => { return console.log(err) });
+    }
+
+
+
     componentDidMount() {
-        // axios.get("http://localhost:5000/uk")
-        //     .then((res) => {
-        //         console.log(res.data)
-        //         this.setState({
-        //             numbers: res.data.numbers,
-        //             source: res.data.source,
-        //             loading:false
-        //         })
-        //     })
+        this.getData(this);
 
-        //     .catch((err) => { return console.log(err) });
+        this.interval = setInterval(() => { this.getData(this) }, 1000*60);
 
-        
+    }
+
+    componentWillUnmount(){
+        clearInterval(this.interval);
     }
 
     render() {

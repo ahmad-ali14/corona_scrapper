@@ -13,18 +13,32 @@ export class Spain extends Component {
         }
     }
 
-    componentDidMount() {
+  
+    getData = (refer) => {
         axios.get("http://localhost:5000/spain")
             .then((res) => {
-                console.log(res.data)
-                this.setState({
+                console.log('updated spain');
+                refer.setState({
                     numbers: res.data.numbers,
                     source: res.data.source,
-                    loading:false
+                    loading: false
                 })
             })
 
             .catch((err) => { return console.log(err) });
+    }
+
+
+
+    componentDidMount() {
+        this.getData(this);
+
+        this.interval = setInterval(() => { this.getData(this) }, 1000*60);
+
+    }
+
+    componentWillUnmount(){
+        clearInterval(this.interval);
     }
 
     render() {

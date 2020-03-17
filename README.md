@@ -12,6 +12,7 @@
  
  ## more info 
  1- [full you tube tutorial arabic language شرح بالعربي](https://www.youtube.com/playlist?list=PLrMI74uzoMfmHqfyikZbCWh-HUW3i89Cn)
+ 
  2- [youTube tutorial english](https://www.youtube.com/playlist?list=PLrMI74uzoMflFfag4AZO1cAFi90WUdTcZ)
  
  ## contact

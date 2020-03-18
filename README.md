@@ -1,4 +1,5 @@
-# coronavirus Live Monitor [![Build Status](https://travis-ci.org/aa947/corona_scrapper.svg?branch=master)](https://travis-ci.org/aa947/corona_scrapper)  [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)  
+# coronavirus Live Monitor 
+[![Build Status](https://travis-ci.org/aa947/corona_scrapper.svg?branch=master)](https://travis-ci.org/aa947/corona_scrapper)  [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier) ![](https://david-dm.org/aa947/corona_scrapper.svg) 
 
 ![sample](https://i.imgur.com/4QmQW0L.png)
 

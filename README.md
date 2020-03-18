@@ -20,10 +20,15 @@
  4- `npm run dev` in the root folder
  
  ## more info 
- 1- [full you tube tutorial arabic language شرح بالعربي](https://www.youtube.com/playlist?list=PLrMI74uzoMfmHqfyikZbCWh-HUW3i89Cn)
+1 - [ web scraping: كيفية الحصول على كامل داتا الفعاليات الاقتصادية في اي مدينة ](https://www.youtube.com/watch?v=juLoQ0lxfmk&t=11s)
 
- 2- [youTube tutorial english](https://www.youtube.com/playlist?list=PLrMI74uzoMflFfag4AZO1cAFi90WUdTcZ)
- 
+2 -[web scraping - get all businesses data in any city](https://www.youtube.com/watch?v=duoW5zUzK-c&t=98s)
+
+3 - [web scraping youtube tutorial - coronavirus live monitor شرح بالعربي](https://www.youtube.com/playlist?list=PLrMI74uzoMfmHqfyikZbCWh-HUW3i89Cn)
+
+4 - [web scraping youtube tutorial - coronavirus live monitor](https://www.youtube.com/playlist?list=PLrMI74uzoMflFfag4AZO1cAFi90WUdTcZ)
+
+
  ## contact
  https://www.ahmad-ali.co.uk/
  
